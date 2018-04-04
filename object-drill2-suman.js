@@ -1,9 +1,10 @@
 function makeStudentsReport(data) {
     let arr = [];
-    function creatingKeyValPair(key){
-        arr.push(`${key.name}: ${key.grade}`);   
-    }
-    data.forEach(student => creatingKeyValPair(student));
+    // function creatingKeyValPair(key){
+    //     arr.push(`${key.name}: ${key.grade}`);   
+    // }
+    // data.forEach(student => creatingKeyValPair(student));
+    data.forEach(student => arr.push(`${student.name}: ${student.grade}`));
     return arr;
   }
   
@@ -186,3 +187,4 @@ const scratchData = [
   
   testIt();
   
+//==========================

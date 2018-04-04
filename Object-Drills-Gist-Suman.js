@@ -21,3 +21,7 @@ for(i in myObj1){
     console.log(i,myObj1[i]);
 }
 //=========================================
+const hobbitMeals ={
+    meals : '"breakfast","second breakfast","elevenses","lunch","afternoon tea","dinner","supper"',
+}
+console.log(hobbitMeals['meals'].split(",")[3]);

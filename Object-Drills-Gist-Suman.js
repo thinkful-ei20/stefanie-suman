@@ -48,3 +48,28 @@ for(let i =0; i< objNameAndJob.length; i++){
     else
         console.log(objNameAndJob[i].jobTitle + " " + objNameAndJob[i].name + " doesn't reports to anybody. ");
 }
+//===================================================================================================================
+//Cracking Code
+const message = 'craft block argon meter bells brown croon droop';
+const decoding ={
+    a : 2,
+    b : 3,
+    c : 4,
+    d : 5,
+}
+function decode(message,decoding){
+    let arr = message.split(" ");
+    function alpha(element){   
+        let firstLetter = element.charAt(0);        
+        let keys = Object.keys(decoding); 
+        for(firstLetter in keys){
+           console.log(decoding.firstLetter);
+        }
+    }
+    
+    //     if( element.charAt(0) === Object.keys(decoding))    
+    let result =[];
+    arr.forEach(element => alpha(element));
+    console.log(result);
+}
+decode(message,decoding);
